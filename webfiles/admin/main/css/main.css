@@ -1,0 +1,219 @@
+
+/* General pages */
+BODY
+{
+	font-family:			verdana, sans-serif;
+	font-size:				11px;
+}
+TABLE
+{
+	font-family:			verdana, sans-serif;
+	font-size:				11px;
+}
+
+/* main table page */
+TABLE.mainPage
+{
+	width:					100%;
+}
+
+/*  head */
+TABLE.tableHead
+{
+	background-color:       #000000;
+	color:					#FFFFFF;
+}
+TD.tdPageHead
+{
+	background-color:		#000000;
+	color:					#FFFFFF;
+	padding:				5px;
+}
+DIV.pageHeadTitle
+{
+	font-size:				12px;
+}
+
+/* Page left frame */
+TD.tdPageLeft
+{
+	background-color:		#99FF66;
+	color:					#000000;
+	border-style:			none solid solid solid;
+	border-width:			0px 1px 1px 1px;
+	border-color:			black black black black;
+	padding:				20px 4px 4px 4px;
+	width:					20%;
+	text-align:				left;
+	vertical-align:			top;
+	height:					620px;
+}
+DIV.inlogUser
+{
+	border-style:			outset;
+	border-width:			2px;
+	border-color:			gray;
+	font-size:				10px;
+	padding:				4px;
+	text-align:				center;
+	background-color:		#009966;
+}
+P.copyright
+{	
+	text-align:				center;
+	font-size:				9px;
+	color:					gray;
+}
+A.copyright
+{
+	color:					gray;
+	text-decoration:		underline;
+	cursor:					pointer;
+}
+/* menu */
+SPAN.menuItemMouseOver
+{	color:							#0034FF;
+	cursor:							pointer;
+	text-decoration:				underline;
+	font-size:						11px;
+}
+SPAN.menuItemMouseOut
+{	color:							#000000;
+	cursor:							pointer;
+	text-decoration:				none;
+	font-size:						11px;
+}
+SPAN.headMenu
+{
+	padding-left:					12px;
+	font-style:						italic;
+}
+
+/* Pagina hoofd frame */
+TD.tdPageMain
+{
+	vertical-align:			top;
+	padding:				4px;
+}
+
+/* Hyperlinks */
+A
+{
+	color:					#0034FF;
+	text-decoration:		underline;
+	cursor:					pointer;
+}
+A.black
+{
+	color:					#000000;
+	text-decoration:		underline;
+	cursor:					pointer;
+}
+SPAN.link
+{
+	color:					#0034FF;
+	text-decoration:		underline;
+	cursor:					pointer;
+}
+
+/* text */
+P.title
+{
+	font-size:				12px;
+	font-weight:			bold;
+}
+SPAN.error
+{
+	color:					red;
+}
+SPAN.gray
+{
+	color:					gray;
+}
+SPAN.red
+{
+	color:					red;
+}
+SPAN.green
+{
+	color:					green;
+}
+SPAN.Administrator
+{
+	color:					yellow;
+}
+P.backToPrevPages
+{
+	border-style:		solid none solid none;
+	border-width:		1px 0px 1px 0px;
+	border-color:		gray gray gray gray;
+	padding:			2px;
+	font-size:			9px;
+}
+
+/*  Hide element  */
+DIV.HideMe
+{
+	display:			none;
+}
+
+/* input */
+INPUT.text
+{	font-family:		verdana, sans-serif;
+	font-size:			11px;
+	border-style:		solid;
+	border-width:		1px;
+	border-color:		black;
+}
+INPUT.radio
+{	font-family:		verdana, sans-serif;
+	font-size:			3px;
+}
+INPUT.button
+{	font-family:		verdana, sans-serif;
+	font-size:			11px;
+}
+INPUT.check
+{	font-family:		verdana, sans-serif;
+	font-size:			11px;
+}
+SELECT.select
+{	font-family:		verdana, sans-serif;
+	font-size:			11px;
+}
+TEXTAREA.textarea
+{	font-family:		verdana, sans-serif;
+	font-size:			11px;
+}
+
+
+/* table  */
+TABLE.FullWidth
+{
+	width:				100%;
+}
+TD.vtop
+{
+	vertical-align:		top;
+}
+TD.hright
+{
+	text-align:			right;
+}
+TD.hleft
+{
+	text-align:			left;
+}
+TD.hcenter
+{
+	text-align:			center;
+}
+TH.hleft
+{
+	text-align:			left;
+}
+TD.hleft
+{
+	text-align:			left;
+}
+
