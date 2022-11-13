@@ -5,7 +5,7 @@ Tevens heeft dit systeem de mogelijkheid om uitzendingen voor "uitzending-gemist
 
 ## !! WAARSCHUWING !!
 
-**Het systeem is oud en lang niet onderhouden geweest. Het heeft veiligheidsissues en code kan zo oud zijn dat deze niet goed werken op de huidige technieken of browsers. Dit project moet als basis worden gezien voor de genoemde functionaliteiten en de ontwikkelaar moet verder doorontwikkelen voor de specifieke omgeving.**
+**Het systeem stampt uit de beginjaren 2000 en heeft onderhoud nodig. Programmatuur voldoet niet aan de huidige technieken. Dit project moet dan ook als basis worden gezien voor de genoemde functionaliteiten.**
 
 ## Installatie
 Dit systeem bestaat uit PHP files met MySql tabellen.
