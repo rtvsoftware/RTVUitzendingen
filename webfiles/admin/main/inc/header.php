@@ -39,7 +39,7 @@ if (isset($_SESSION['loginUser']) && isset($_SESSION['loginPassword']))
 	}
 	if ($err=="") 
 	{								
-		$query = sprintf("SELECT username,lockout,modules,name,id,isadmin FROM ".$GLOBALS['table']['admin_users']." WHERE username='%s' AND password='%s'", 
+		$query = sprintf("SELECT username,password,lockout,modules,name,id,isadmin FROM ".$GLOBALS['table']['admin_users']." WHERE username='%s' AND password='%s'", 
 			$_SESSION['loginUser'],
 			$_SESSION['loginPassword']
 			);
@@ -55,6 +55,7 @@ if (isset($_SESSION['loginUser']) && isset($_SESSION['loginPassword']))
 				$_SESSION['loginModules'] = $row['modules'];	// modules
 				$_SESSION['loginName'] = $row['name'];		// voornaam
 				$_SESSION['loginIsAdmin'] = $row['isadmin'] == 1 ? true : false;	// Is Admin 
+				$_SESSION['loginDefaultPassword'] = $row['password'] == '5136b96817648b5b81008f6a984284a7'; // check on default password
 				// -----------------------------------------------------------------------
 				$result=$GLOBALS['mysql']->query("UPDATE ".$GLOBALS['table']['admin_users']." SET lastLogin=NOW(), lastIP='".$_SERVER['REMOTE_ADDR']."' WHERE username='".$_SESSION['loginUser']."'");
 			}
@@ -121,6 +122,10 @@ if (isset($logoff) && $logoff)
 
 	
 	<body>
+
+	<?php if ($_SESSION['loginDefaultPassword']) { ?>
+		<p><strong>Waarschuwing. U gebruikt het standaard wachtwoord. Wijzig uw wachtwoord zo snel mogelijk.</strong></p>
+	<?php } ?>
 
 		<!-- page -->
 		<table class="mainPage" border="0" cellspacing="0" cellpadding="0">
